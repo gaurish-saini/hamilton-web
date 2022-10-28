@@ -1,6 +1,6 @@
 export default function Offers() {
   return (
-    <div className="bg-riceFlower mx-[140px] flex flex-row px-[60px] rounded-[5px] ">
+    <div className="bg-riceFlower mx-[140px] my-20 flex flex-row px-[60px] rounded-[5px] ">
       <div className="text-primaryBlack flex flex-col py-[53px]">
         <text className="text-4xl leading-[43px] font-semibold">
           Exciting offers

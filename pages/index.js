@@ -5,6 +5,7 @@ import HeaderMenu from "../components/headerMenu/headerMenu";
 import UspStrip from "../components/uspStrip/uspStrip";
 import ShopBrands from "../components/shopBrands/shopBrands";
 import Offers from "../components/offers/offers";
+import OptionCatalogue from "../components/options/options";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <UspStrip />
       <ShopBrands />
       <Offers />
+      <OptionCatalogue />
     </>
   );
 }

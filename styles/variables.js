@@ -5,5 +5,6 @@ module.exports = {
     tanHide: "#FF9A51",
     riceFlower: "#EFFFE3",
     amaranth: "#EE3D43",
+    danube: "#6290C3",
   },
 };
