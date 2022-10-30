@@ -50,7 +50,7 @@ export default function ShopBrands() {
         {brands.map((brand) => {
           return (
             <div
-              className="p-14 flex flex-col justify-center items-center hover:bg-tanHide"
+              className="p-14 flex flex-col justify-center items-center hover:bg-tanHide/[0.1]"
               key={brand.name}
             >
               <Image

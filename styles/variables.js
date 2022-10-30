@@ -6,5 +6,6 @@ module.exports = {
     riceFlower: "#EFFFE3",
     amaranth: "#EE3D43",
     danube: "#6290C3",
+    oxfordBlue: "#384759"
   },
 };
