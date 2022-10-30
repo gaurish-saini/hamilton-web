@@ -36,3 +36,26 @@ a {
 .headerShadow {
   box-shadow: 0px 1px 1px 1px rgba(124, 124, 124, 0.1);
 }
+
+.control-dots {
+  margin-bottom: 139px !important;
+  margin-left: 140px !important ;
+  width: max-content !important;
+}
+
+.dot {
+  width: 9px !important;
+  height: 9px !important ;
+  background-color: #1a1b41 !important;
+  opacity: 0.2 !important;
+  margin: 0px !important;
+  margin-right: 11px !important;
+}
+.control-dots .selected {
+  width: 9px !important;
+  height: 9px !important ;
+  background-color: #1a1b41 !important;
+  opacity: 0.7 !important;
+  margin: 0px !important;
+  margin-right: 11px !important;
+}

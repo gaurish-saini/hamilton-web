@@ -2,6 +2,7 @@ import Head from "next/head";
 import HeaderBanner from "../components/headerBanner/headerBanner";
 import Header from "../components/header/header";
 import HeaderMenu from "../components/headerMenu/headerMenu";
+import BannerCarousel from "../components/bannerCarousel/bannerCarousel";
 import UspStrip from "../components/uspStrip/uspStrip";
 import ShopBrands from "../components/shopBrands/shopBrands";
 import Offers from "../components/offers/offers";
@@ -19,6 +20,7 @@ export default function Home() {
       <HeaderBanner />
       <Header />
       <HeaderMenu />
+      <BannerCarousel />
       <UspStrip />
       <ShopBrands />
       <Offers />
