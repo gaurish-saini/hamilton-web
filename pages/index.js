@@ -6,6 +6,7 @@ import BannerCarousel from "../components/bannerCarousel/bannerCarousel";
 import UspStrip from "../components/uspStrip/uspStrip";
 import Bestsellers from "../components/bestsellers/bestsellers";
 import ShopBrands from "../components/shopBrands/shopBrands";
+import NewArrivals from "../components/newArrivals/newArrivals";
 import Offers from "../components/offers/offers";
 import OptionCatalogue from "../components/options/options";
 import Footer from "../components/footer/footer";
@@ -25,6 +26,7 @@ export default function Home() {
       <UspStrip />
       <Bestsellers />
       <ShopBrands />
+      <NewArrivals />
       <Offers />
       <OptionCatalogue />
       <Footer />
