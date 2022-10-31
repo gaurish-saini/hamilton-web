@@ -73,84 +73,81 @@ export default function Bestsellers() {
 
   return (
     <div className="flex flex-col py-20">
-      <div className="flex flex-row px-[140px]">
-        <text>Bestsellers</text>
+      <div className="flex flex-row px-[140px] pb-10 justify-between">
+        <text className="text-primaryBlack font-semibold text-4xl leading-[43px]">
+          Bestsellers
+        </text>
         <div className="flex flex-row">
-          <button>
-            <Image />
+          <button className="bg-primaryBlack w-12 h-12 rounded-l-[5px]">
+            <Image alt="backward" src={backward} width={9} height={14} />
           </button>
-          <button>
-            <Image />
+          <button className="bg-primaryBlack w-12 h-12 rounded-r-[5px]">
+            <Image alt="forward" src={forward} width={9} height={14} />
           </button>
         </div>
       </div>
-      <div className="flex flex-row">
-        <div className="flex flex-row pl-[125px]">
-          {bestsellers.map((product) => {
-            return (
-              <div
-                key={product.productName}
-                className="flex flex-col hover:bg-primaryBlack/5 p-[15px]"
-              >
-                <div className="min-w-[260px]">
-                  <Image
-                    src={product.productImage}
-                    width={260}
-                    height={260}
-                    alt="product"
-                  />
+      <div className="flex flex-row pl-[125px] overflow-hidden">
+        {bestsellers.map((product) => {
+          return (
+            <div
+              key={product.productName}
+              className="flex flex-col hover:bg-primaryBlack/5 p-[15px] rounded-[5px]"
+            >
+              <div className="min-w-[260px] relative">
+                <div className="absolute flex flex-row top-2.5 z-10">
+                  <text className="bg-greenYellow h-[22px] rounded-r-[5px] py-1 px-2.5 text-primaryBlack font-bold text-[13px] leading-[15px] tracking-[0.5px]">
+                    {product.status}
+                  </text>
+                  <div className="ml-[114px]">
+                    <Image
+                      src={wishlist}
+                      alt="wishlist"
+                      width={35}
+                      height={35}
+                    />
+                  </div>
                 </div>
-                <ul className="flex flex-row">
-                  <li>
-                    <Image
-                      src={starFilled}
-                      width={13}
-                      height={12}
-                      alt="rating"
-                    />
-                  </li>
-                  <li>
-                    <Image
-                      src={starFilled}
-                      width={13}
-                      height={12}
-                      alt="rating"
-                    />
-                  </li>
-                  <li>
-                    <Image
-                      src={starFilled}
-                      width={13}
-                      height={12}
-                      alt="rating"
-                    />
-                  </li>
-                  <li>
-                    <Image
-                      src={starFilled}
-                      width={13}
-                      height={12}
-                      alt="rating"
-                    />
-                  </li>
-                  <li>
-                    <Image
-                      src={starEmpty}
-                      width={13}
-                      height={12}
-                      alt="rating"
-                    />
-                  </li>
-                </ul>
-                <text>{product.productName}</text>
-                <text>{product.description}</text>
-                <text>{product.brand}</text>
-                <text>{product.price}</text>
-                <button>ADD TO CART</button>
+                <Image
+                  src={product.productImage}
+                  width={260}
+                  height={260}
+                  alt="product"
+                />
               </div>
-            );
-          })}
-        </div>
+              <ul className="flex flex-row pt-5">
+                <li className="mr-[2px]">
+                  <Image src={starFilled} width={13} height={12} alt="rating" />
+                </li>
+                <li className="mr-[2px]">
+                  <Image src={starFilled} width={13} height={12} alt="rating" />
+                </li>
+                <li className="mr-[2px]">
+                  <Image src={starFilled} width={13} height={12} alt="rating" />
+                </li>
+                <li className="mr-[2px]">
+                  <Image src={starFilled} width={13} height={12} alt="rating" />
+                </li>
+                <li className="mr-[2px]">
+                  <Image src={starEmpty} width={13} height={12} alt="rating" />
+                </li>
+              </ul>
+              <text className="text-primaryBlack text-lg leading-[24px] font-bold pt-[15px]">
+                {product.productName}
+              </text>
+              <text className="text-primaryBlack/80 py-[6px] text-sm">
+                {product.description}
+              </text>
+              <text>{product.brand}</text>
+              <text className="pt-[6px] text-lg leading-[24px] font-bold">
+                <text className="font-normal">&#8377;</text>
+                {product.price}
+              </text>
+              <button className="mt-[15px] py-[15px] px-[76px] font-bold text-white tracking-[2px] text-[13px] leading-[20px] rounded-[5px] bg-amaranth">
+                ADD TO CART
+              </button>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
