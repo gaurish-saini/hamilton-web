@@ -154,6 +154,7 @@ const ShopBy = ({ router }) => {
                   >
                     <div className="flex flex-row items-center">
                       <Image
+                        className="bg-pearlBush rounded-[5px] group-hover:bg-white"
                         src={product.image}
                         alt={product.title}
                         width={80}

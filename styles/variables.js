@@ -8,5 +8,6 @@ module.exports = {
     danube: "#6290C3",
     oxfordBlue: "#384759",
     greenYellow: "#BAFF29",
+    pearlBush: "#E4DCD0",
   },
 };
