@@ -10,7 +10,7 @@ export default function Offers() {
           debit cards. T&C apply* <br />
           <text>
             Click & Collect available at just Rs. 99 only (Valid for Hyderabad)
-            for Navi Mumbai it's free.
+            for Navi Mumbai it&apos;s free.
           </text>
         </p>
       </div>

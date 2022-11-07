@@ -5,7 +5,12 @@ import banner from "../../styles/assests/banner.png";
 
 export default function BannerCarousel() {
   return (
-    <Carousel className="h-[580px]" showArrows={false} showStatus={false}>
+    <Carousel
+      className="h-[580px]"
+      showThumbs={false}
+      showArrows={false}
+      showStatus={false}
+    >
       <div className="relative">
         <Image src={banner} width={1440} height={580} alt="bannerImage 1" />
         <div className="absolute flex flex-col items-start top-10 left-[140px]">
