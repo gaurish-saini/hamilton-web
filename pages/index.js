@@ -6,9 +6,10 @@ import BannerCarousel from "../components/bannerCarousel/bannerCarousel";
 import UspStrip from "../components/uspStrip/uspStrip";
 import Bestsellers from "../components/bestsellers/bestsellers";
 import ShopBrands from "../components/shopBrands/shopBrands";
-import ShopBy from "../components/shopBY/shopBy";
+import ShopBy from "../components/shopBy/shopBy";
 import NewArrivals from "../components/newArrivals/newArrivals";
 import Offers from "../components/offers/offers";
+import Blogs from "../components/blogs/blogs";
 import OptionCatalogue from "../components/options/options";
 import Footer from "../components/footer/footer";
 
@@ -30,6 +31,7 @@ export default function Home() {
       <ShopBy />
       <NewArrivals />
       <Offers />
+      <Blogs />
       <OptionCatalogue />
       <Footer />
     </>

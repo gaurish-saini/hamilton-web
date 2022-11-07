@@ -86,7 +86,7 @@ export default function NewArrivals() {
           </button>
         </div>
       </div>
-      <div className="flex flex-row pl-[125px] overflow-hidden">
+      <div className="flex flex-row pl-[140px] overflow-hidden">
         {bestsellers.map((product) => {
           return (
             <div

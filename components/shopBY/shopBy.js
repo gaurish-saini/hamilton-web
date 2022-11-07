@@ -88,8 +88,13 @@ const ShopBy = ({ router }) => {
     },
   ];
 
+  const [tabSelected, setTabSelected] = React.useState(false);
+  const [tabUnselected, setTabUnselected] = React.useState(true);
+  function handleClick() {
+    setTabSelected(true);
+  }
   return (
-    <div className="mx-[140px] my-20">
+    <div className="mx-[140px] mt-20">
       {/* head */}
       <text className="text-primaryBlack font-semibold text-4xl leading-[43px]">
         Shop By
@@ -98,7 +103,7 @@ const ShopBy = ({ router }) => {
         {/* tabs */}
         <div className="mr-10">
           <Link scroll={false} href={{ pathname: "/", query: { tab: "1" } }}>
-            <a>
+            <a onClick={handleClick}>
               <div className="flex flex-row">
                 <text className="font-semibold text-amaranth text-[22px] leading-[28px]">
                   Usage
@@ -112,7 +117,7 @@ const ShopBy = ({ router }) => {
         </div>
         <div className="mr-10">
           <Link scroll={false} href={{ pathname: "/", query: { tab: "2" } }}>
-            <a>
+            <a onClick={handleClick}>
               <div className="flex flex-row">
                 <text className="font-semibold text-amaranth text-[22px] leading-[28px]">
                   Products
