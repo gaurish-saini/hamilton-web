@@ -1,17 +1,17 @@
 import Head from "next/head";
-import HeaderBanner from "../components/headerBanner/headerBanner";
-import Header from "../components/header/header";
-import HeaderMenu from "../components/headerMenu/headerMenu";
-import BannerCarousel from "../components/bannerCarousel/bannerCarousel";
-import UspStrip from "../components/uspStrip/uspStrip";
-import Bestsellers from "../components/bestsellers/bestsellers";
-import ShopBrands from "../components/shopBrands/shopBrands";
-import ShopBy from "../components/shopBy/shopBy";
-import NewArrivals from "../components/newArrivals/newArrivals";
-import Offers from "../components/offers/offers";
-import Blogs from "../components/blogs/blogs";
-import OptionCatalogue from "../components/options/options";
-import Footer from "../components/footer/footer";
+import HeaderBanner from "../components/HeaderBanner";
+import Header from "../components/Header";
+import HeaderMenu from "../components/HeaderMenu";
+import BannerCarousel from "../components/BannerCarousel";
+import UspStrip from "../components/UspStrip";
+import Bestsellers from "../components/Bestsellers";
+import ShopBrands from "../components/ShopBrands";
+import ShopBy from "../components/ShopBy";
+import NewArrivals from "../components/NewArrivals";
+import Offers from "../components/Offers";
+import Blogs from "../components/Blogs";
+import OptionCatalogue from "../components/Options";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
